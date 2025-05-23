@@ -30,6 +30,7 @@ export default function DonutChartsSection() {
         label="Hours"
         progress={60}
         status="In Progress"
+        delay={0.1}
       />
       <DonutChartCard
         title="Skills Mastered"
@@ -38,6 +39,7 @@ export default function DonutChartsSection() {
         label="Skill Units"
         progress={80}
         status="Completed"
+        delay={0.3}
       />      
 
       <DonutChartCard
@@ -47,6 +49,7 @@ export default function DonutChartsSection() {
         label="Items"
         progress={45}
         status="In Progress"
+        delay={0.5}
       />
 
   </div>

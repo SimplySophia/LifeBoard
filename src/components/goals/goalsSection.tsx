@@ -65,9 +65,9 @@ export default function GoalsSection() {
         />
         <button
           onClick={handleAddGoal}
-          className="bg-primary text-white px-2 py-1 rounded-md"
+          className="bg-primary text-white px-2 py-1 rounded-md transition-all duration-300 ease-in hover:shadow-[0_0_15px_hsl(var(--color-primary))]"
         >
-          Add
+          Add Goals
         </button>
       </div>
 
