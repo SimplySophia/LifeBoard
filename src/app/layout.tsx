@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import PageWrapper from "@/components/PageWrapper"
+
 
 
 const geistSans = Geist({
@@ -29,14 +31,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+       <PageWrapper>
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem={true}
-          storageKey="portfolio-theme"
+          storageKey="dashboard-theme"
         >
         {children}
         </ThemeProvider>
+        </PageWrapper>
       </body>
     </html>
   );
