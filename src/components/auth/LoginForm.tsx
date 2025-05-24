@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-import BackButton from "@/components/ui/BackButton";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -46,7 +45,8 @@ const LoginForm = () => {
         }
     });
 
-    const handleSubmit = (data: z.infer<typeof formSchema>) => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const handleSubmit = (_data: z.infer<typeof formSchema>) => {
         router.push('/');
     };
 
